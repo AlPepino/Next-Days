@@ -1,0 +1,883 @@
+FrameWidgetClass rootFrame {
+ visible 1
+ ignorepointer 1
+ position 10 10
+ size 1 1
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  WrapSpacerWidgetClass InfoToPlayerWindow {
+   visible 1
+   ignorepointer 1
+   color 0 0 0 0.702
+   position 0 0
+   size 500 0
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 0
+   priority 100
+   style DayZDefaultPanel
+   "Size To Content V" 1
+   content_halign center
+   {
+    PanelWidgetClass ITPBG {
+     ignorepointer 1
+     position 0 0
+     size 0.98 30
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     {
+      TextWidgetClass Title {
+       ignorepointer 1
+       position 0 0
+       size 0.98 0.98
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text ""
+       font "gui/fonts/amorserifpro-bold22"
+       "exact text" 1
+       "size to text h" 0
+       "size to text v" 1
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass ItemOne0 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass OneTitle0 {
+     ignorepointer 1
+     size 0.98 0.98
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+   }
+  }
+  PanelWidgetClass ItemOne1 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass OneTitle1 {
+     ignorepointer 1
+     size 0.98 0.98
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+   }
+  }
+  PanelWidgetClass ItemOne2 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass OneTitle2 {
+     ignorepointer 1
+     size 0.98 0.98
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+   }
+  }
+  PanelWidgetClass ItemOne3 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass OneTitle3 {
+     ignorepointer 1
+     size 0.98 0.98
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+   }
+  }
+  PanelWidgetClass ItemOne4 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass OneTitle4 {
+     ignorepointer 1
+     size 0.98 0.98
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+   }
+  }
+  PanelWidgetClass ItemOne5 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass OneTitle5 {
+     ignorepointer 1
+     size 0.98 0.98
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+   }
+  }
+  PanelWidgetClass ItemOne6 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass OneTitle6 {
+     ignorepointer 1
+     size 0.98 0.98
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+   }
+  }
+  PanelWidgetClass ItemOne7 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass OneTitle7 {
+     ignorepointer 1
+     size 0.98 0.98
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+   }
+  }
+  PanelWidgetClass ItemOne8 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass OneTitle8 {
+     ignorepointer 1
+     size 0.98 0.98
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+   }
+  }
+  PanelWidgetClass ItemOne9 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass OneTitle9 {
+     ignorepointer 1
+     size 0.98 0.98
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+   }
+  }
+  PanelWidgetClass ItemOne10 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass OneTitle10 {
+     ignorepointer 1
+     size 0.98 0.98
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+   }
+  }
+  PanelWidgetClass ItemTwo0 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass TwoTitle0 {
+     ignorepointer 1
+     position 0.01 0
+     size 0.6 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+    MultilineTextWidgetClass TwoValue0 {
+     ignorepointer 1
+     position 0.61 0
+     size 0.38 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass ItemTwo1 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass TwoTitle1 {
+     ignorepointer 1
+     position 0.01 0
+     size 0.6 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+    MultilineTextWidgetClass TwoValue1 {
+     ignorepointer 1
+     position 0.61 0
+     size 0.38 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass ItemTwo2 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass TwoTitle2 {
+     ignorepointer 1
+     position 0.01 0
+     size 0.6 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+    MultilineTextWidgetClass TwoValue2 {
+     ignorepointer 1
+     position 0.61 0
+     size 0.38 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass ItemTwo3 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass TwoTitle3 {
+     ignorepointer 1
+     position 0.01 0
+     size 0.6 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+    MultilineTextWidgetClass TwoValue3 {
+     ignorepointer 1
+     position 0.61 0
+     size 0.38 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass ItemTwo4 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass TwoTitle4 {
+     ignorepointer 1
+     position 0.01 0
+     size 0.6 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+    MultilineTextWidgetClass TwoValue4 {
+     ignorepointer 1
+     position 0.61 0
+     size 0.38 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass ItemTwo5 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass TwoTitle5 {
+     ignorepointer 1
+     position 0.01 0
+     size 0.6 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+    MultilineTextWidgetClass TwoValue5 {
+     ignorepointer 1
+     position 0.61 0
+     size 0.38 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass ItemTwo6 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass TwoTitle6 {
+     ignorepointer 1
+     position 0.01 0
+     size 0.6 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+    MultilineTextWidgetClass TwoValue6 {
+     ignorepointer 1
+     position 0.61 0
+     size 0.38 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass ItemTwo7 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass TwoTitle7 {
+     ignorepointer 1
+     position 0.01 0
+     size 0.6 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+    MultilineTextWidgetClass TwoValue7 {
+     ignorepointer 1
+     position 0.61 0
+     size 0.38 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass ItemTwo8 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass TwoTitle8 {
+     ignorepointer 1
+     position 0.01 0
+     size 0.6 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+    MultilineTextWidgetClass TwoValue8 {
+     ignorepointer 1
+     position 0.61 0
+     size 0.38 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass ItemTwo9 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass TwoTitle9 {
+     ignorepointer 1
+     position 0.01 0
+     size 0.6 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+    MultilineTextWidgetClass TwoValue9 {
+     ignorepointer 1
+     position 0.61 0
+     size 0.38 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass ItemTwo10 {
+   ignorepointer 1
+   position 0 0
+   size 0.98 30
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    MultilineTextWidgetClass TwoTitle10 {
+     ignorepointer 1
+     position 0.01 0
+     size 0.6 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text valign" center
+     wrap 1
+    }
+    MultilineTextWidgetClass TwoValue10 {
+     ignorepointer 1
+     position 0.61 0
+     size 0.38 0.98
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text ""
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+ }
+}

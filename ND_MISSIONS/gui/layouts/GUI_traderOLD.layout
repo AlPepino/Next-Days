@@ -1,0 +1,934 @@
+FrameWidgetClass rootFrame {
+ visible 1
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  WrapSpacerWidgetClass rootWindow {
+   visible 1
+   disabled 0
+   ignorepointer 0
+   color 0 0 0 0.7843
+   position 0 0
+   size 0.98 0.96
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   priority 1
+   style DayZDefaultPanel
+   Padding 6
+   Margin 0
+   {
+    PanelWidgetClass headerPanel {
+     visible 1
+     ignorepointer 1
+     color 0 0 0 0.8627
+     position 0 0
+     size 1 36
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      TextWidgetClass headerTitle {
+       ignorepointer 1
+       position 300 0
+       size 700 0.98
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       text "#trader_buing_title"
+       "text valign" center
+      }
+      ButtonWidgetClass CloseBtn {
+       position 0 0
+       size 36 36
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 1
+       {
+        ImageWidgetClass CloseIcon {
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         image0 "set:dayz_gui image:icon_x"
+         mode blend
+         "src alpha" 1
+         "no wrap" 1
+        }
+       }
+      }
+      PanelWidgetClass TraderBankPanel {
+       visible 1
+       ignorepointer 1
+       size 300 36
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        PanelWidgetClass TraderBankBalancePanel {
+         ignorepointer 1
+         position 0 0
+         size 260 32
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          TextWidgetClass TraderBankBalanceText {
+           ignorepointer 1
+           position 0 0
+           size 190 30
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 0
+           hexactsize 1
+           vexactsize 1
+           text "0"
+           font "gui/fonts/amorserifpro22"
+           "text valign" center
+          }
+          ImageWidgetClass TraderBankBalanceIcon {
+           ignorepointer 1
+           color 0.6588 0.6588 0.6588 1
+           size 32 32
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 1
+           vexactsize 1
+           image0 "set:dayz_gui image:notification_friend"
+           mode blend
+           "src alpha" 1
+           stretch 1
+          }
+          ImageWidgetClass TraderBankBalanceIconCash {
+           ignorepointer 1
+           color 0.6588 0.6588 0.6588 1
+           position 34 0
+           size 32 32
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           image0 "set:dayz_gui image:notification_friend"
+           mode blend
+           "src alpha" 1
+           stretch 1
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass BankPanel {
+       visible 1
+       ignorepointer 1
+       position 180 0
+       size 174 36
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        PanelWidgetClass BankBalancePanel {
+         ignorepointer 1
+         position 0 0
+         size 174 32
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          TextWidgetClass BankBalanceText {
+           ignorepointer 1
+           size 140 30
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 0
+           hexactsize 1
+           vexactsize 1
+           text "0"
+           font "gui/fonts/amorserifpro22"
+           "text valign" center
+          }
+          ImageWidgetClass BankBalanceIcon {
+           ignorepointer 1
+           color 0.6588 0.6588 0.6588 1
+           size 32 32
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 1
+           vexactsize 1
+           image0 "set:dayz_gui image:notification_friend"
+           mode blend
+           "src alpha" 1
+           stretch 1
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass actionPanel {
+     visible 1
+     ignorepointer 1
+     color 0 0 0 0
+     position 0 0
+     size 1 72
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      PanelWidgetClass ActionPanel2 {
+       ignorepointer 1
+       position 4 0
+       size 580 72
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        PanelWidgetClass SearchPanel {
+         ignorepointer 1
+         position 0 0
+         size 210 36
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 1
+         vexactsize 1
+         {
+          PanelWidgetClass FindItemTextBG {
+           visible 0
+           ignorepointer 1
+           color 0.8118 0.8118 0.8118 1
+           position 0 0
+           size 170 36
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           style EditorPanel
+          }
+          EditBoxWidgetClass FindItemText {
+           position 0 0
+           size 170 30
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 1
+           vexactsize 1
+           priority 1
+           style EditorProperty
+           font "gui/fonts/amorserifpro16"
+          }
+          ButtonWidgetClass FindItemBtn {
+           color 0.8353 0.2235 0.2235 1
+           position 174 0
+           size 32 32
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           userID 502
+           style Default
+           font "gui/fonts/amorserifpro16"
+           {
+            ImageWidgetClass FindItemIcon {
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             image0 "set:dayz_gui image:icon_refresh"
+             mode blend
+             "src alpha" 1
+             stretch 1
+            }
+           }
+          }
+         }
+        }
+        PanelWidgetClass CartPanel {
+         ignorepointer 1
+         position 0 0
+         size 350 72
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          ImageWidgetClass CartCashIcon {
+           ignorepointer 1
+           color 0.6588 0.6588 0.6588 1
+           position 0 2
+           size 32 32
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           image0 "set:dayz_gui image:icon_feedback"
+           mode blend
+           "src alpha" 1
+           stretch 1
+          }
+          ImageWidgetClass CartTotalIcon {
+           ignorepointer 1
+           color 0.6588 0.6588 0.6588 1
+           position 0 2
+           size 32 32
+           valign bottom_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           image0 "set:dayz_gui image:icon_feedback"
+           mode blend
+           "src alpha" 1
+           stretch 1
+          }
+          TextWidgetClass CartCashValue {
+           ignorepointer 1
+           position 34 3
+           size 140 30
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "0"
+           font "gui/fonts/amorserifpro-bold22"
+           "text valign" center
+          }
+          TextWidgetClass CartTotalValue {
+           ignorepointer 1
+           position 34 3
+           size 140 30
+           valign bottom_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "0"
+           font "gui/fonts/amorserifpro-bold22"
+           "text valign" center
+          }
+          TextWidgetClass CartCountValue {
+           ignorepointer 1
+           position 176 0
+           size 36 30
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           priority 1
+           text "0"
+           font "gui/fonts/amorserifpro-bold16"
+           "text halign" center
+           "text valign" center
+          }
+          ButtonWidgetClass ConfirmBtn {
+           color 0.8353 0.2235 0.2235 1
+           size 64 64
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           userID 501
+           style Default
+           font "gui/fonts/amorserifpro16"
+           {
+            ImageWidgetClass ConfirmIcon {
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             image0 "set:dayz_gui image:icon_refresh"
+             mode blend
+             "src alpha" 1
+             stretch 1
+            }
+           }
+          }
+          ButtonWidgetClass EmptyBtn {
+           color 0.8353 0.2235 0.2235 1
+           position 66 0
+           size 64 64
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           userID 500
+           style Default
+           font "gui/fonts/amorserifpro16"
+           {
+            ImageWidgetClass EmptyIcon {
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             image0 "set:dayz_gui image:icon_refresh"
+             mode blend
+             "src alpha" 1
+             stretch 1
+            }
+           }
+          }
+          ButtonWidgetClass CartBtn {
+           ignorepointer 0
+           color 0.6588 0.6588 0.6588 1
+           position 176 0
+           size 32 32
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           {
+            ImageWidgetClass CartIcon {
+             ignorepointer 1
+             color 0.6588 0.6588 0.6588 1
+             size 1 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             image0 "set:dayz_gui image:ironsight"
+             mode blend
+             "src alpha" 1
+             stretch 1
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    WrapSpacerWidgetClass groupPanel {
+     ignorepointer 1
+     position 0 0
+     size 1 0
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     Padding 0
+     Margin 0
+     "Size To Content V" 1
+     {
+      PanelWidgetClass groupTitlePanel {
+       ignorepointer 1
+       position 0 0
+       size 1 30
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       {
+        PanelWidgetClass groupTitleBG {
+         ignorepointer 1
+         color 0 0 0 0.6627
+         position 0 0
+         size 200 30
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         style DayZDefaultPanel
+         {
+          TextWidgetClass groupTitle {
+           ignorepointer 1
+           position 0 0
+           size 0.98 0.98
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "#trader_store_title"
+           font "gui/fonts/amorserifpro16"
+           "size to text v" 1
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    WrapSpacerWidgetClass categoryPanel {
+     ignorepointer 1
+     position 0 0
+     size 1 0
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     Padding 0
+     Margin 0
+     "Size To Content V" 1
+     {
+      PanelWidgetClass categoryTitlePanel {
+       ignorepointer 1
+       position 0 0
+       size 1 30
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       {
+        PanelWidgetClass categoryTitleBG {
+         ignorepointer 1
+         color 0 0 0 0.6627
+         position 0 0
+         size 200 30
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         style DayZDefaultPanel
+         {
+          TextWidgetClass categoryTitle {
+           ignorepointer 1
+           position 0 0
+           size 0.98 0.98
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "#trader_category_title"
+           font "gui/fonts/amorserifpro16"
+           "size to text v" 1
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass LeftPanel {
+     ignorepointer 1
+     position 0 0
+     size 0.24 0.65
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     {
+      PanelWidgetClass SubCatTitlePanel {
+       ignorepointer 1
+       color 0 0 0 0.8627
+       position 0 0
+       size 1 30
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 1
+       style DayZDefaultPanel
+       {
+        TextWidgetClass SubCatTitle {
+         ignorepointer 1
+         position 0 0
+         size 1 0.98
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "#trader_filtr_title"
+         font "gui/fonts/amorserifpro16"
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+      PlayerPreviewWidgetClass PlayerPreview {
+       ignorepointer 1
+       position 0 0
+       size 1 0.7
+       halign center_ref
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+      TextListboxWidgetClass FiltrList {
+       position 0 32
+       size 0.98 1
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       priority 10
+       style NoScrollBar
+       colums "#trader_filtr_title;100"
+       lines 1
+       "highlight row" 1
+       font "gui/fonts/amorserifpro22"
+      }
+     }
+    }
+    PanelWidgetClass RightPanel {
+     ignorepointer 1
+     position 0 0.25
+     size 0.75 0.74
+     halign right_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      ScrollWidgetClass RightPanelScroll {
+       ignorepointer 0
+       size 1 0.98
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "Scrollbar V" 1
+       {
+        WrapSpacerWidgetClass BodyPanel {
+         ignorepointer 1
+         position 0 0
+         size 1 0
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         Margin 0
+         "Size To Content V" 1
+         content_halign center
+        }
+       }
+      }
+      PanelWidgetClass FilterPanel {
+       visible 1
+       ignorepointer 1
+       color 0 0 0 0.8627
+       position 0 0
+       size 1 30
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       priority 1
+       style DayZDefaultPanelRight
+       {
+        PanelWidgetClass PanelWidget0 {
+         ignorepointer 1
+         position 248 0
+         size 220 1
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 0
+         {
+          TextWidgetClass TextWidget0 {
+           ignorepointer 1
+           size 148 30
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "#trader_filter_name"
+           font "gui/fonts/amorserifpro-bold16"
+           "text halign" right
+           "text valign" center
+          }
+          ButtonWidgetClass OrderBy_1_Btn {
+           position 0 0
+           size 30 30
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           {
+            ImageWidgetClass OrderBy_1_Icon {
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             image0 "set:dayz_gui image:icon_collapse"
+             mode blend
+             "src alpha" 1
+            }
+           }
+          }
+          ButtonWidgetClass OrderBy_0_Btn {
+           position 34 0
+           size 30 30
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           switch normal
+           {
+            ImageWidgetClass OrderBy_0_Icon {
+             ignorepointer 1
+             size 1 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             image0 "set:dayz_gui image:icon_expand"
+             mode blend
+             "src alpha" 1
+            }
+           }
+          }
+         }
+        }
+        PanelWidgetClass PanelWidget1 {
+         ignorepointer 1
+         position 24 0
+         size 220 1
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 0
+         {
+          TextWidgetClass TextWidget1 {
+           ignorepointer 1
+           size 148 30
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "#trader_filter_price"
+           font "gui/fonts/amorserifpro-bold16"
+           "text halign" right
+           "text valign" center
+          }
+          ButtonWidgetClass OrderBy_2_Btn {
+           position 34 0
+           size 30 30
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           draggable 0
+           {
+            ImageWidgetClass OrderBy_2_Icon {
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             image0 "set:dayz_gui image:icon_expand"
+             mode blend
+             "src alpha" 1
+            }
+           }
+          }
+          ButtonWidgetClass OrderBy_3_Btn {
+           size 30 30
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           draggable 0
+           switch normal
+           {
+            ImageWidgetClass OrderBy_3_Icon {
+             ignorepointer 1
+             position 0 0
+             size 30 30
+             halign right_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 1
+             vexactsize 1
+             image0 "set:dayz_gui image:icon_collapse"
+             mode blend
+             "src alpha" 1
+            }
+           }
+          }
+         }
+        }
+        TextWidgetClass FilterTitle {
+         ignorepointer 1
+         position 4 0
+         size 0.5 30
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         font "gui/fonts/amorserifpro-bold22"
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass rootWindowLoading {
+   visible 0
+   ignorepointer 1
+   color 0 0 0 0.5059
+   position 0 0
+   size 320 180
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 50
+   style rover_sim_black_2
+   {
+    PanelWidgetClass InfoWindowTradingBG {
+     ignorepointer 1
+     color 0 0 0 0.5059
+     position 0 0
+     size 0.98 0.95
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style DayZDefaultPanel
+     {
+      RichTextWidgetClass InfoTextTrading {
+       ignorepointer 1
+       position 0 0
+       size 0.98 0.95
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "#trader_info_loading"
+       font "gui/fonts/etelkatextpro16"
+       "exact text" 1
+       "size to text v" 0
+       "text halign" center
+       "text valign" center
+       wrap 1
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass rootContainer {
+   visible 0
+   ignorepointer 1
+   position 0 0
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+  }
+ }
+}

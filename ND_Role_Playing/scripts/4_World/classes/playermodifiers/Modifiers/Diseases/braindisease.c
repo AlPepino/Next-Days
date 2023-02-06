@@ -1,0 +1,20 @@
+modded class BrainDiseaseMdfr: ModifierBase
+{
+	override void OnActivate(PlayerBase player)
+	{
+		super.OnActivate(player);
+		
+		
+		player.GetRP().SetDisease(alpDiseases.BRAINDISEASE);
+
+	}
+	
+
+	
+	override void OnDeactivate(PlayerBase player)
+	{
+		super.OnDeactivate(player);
+		
+		player.GetRP().UnsetDisease(alpDiseases.BRAINDISEASE);
+	}
+};

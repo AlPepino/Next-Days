@@ -1,0 +1,102 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 1 36
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 1
+ {
+  PanelWidgetClass PanelWidget0 {
+   ignorepointer 1
+   color 0 0 0 0
+   size 1 32
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 1
+   style DayZDefaultPanel
+   {
+    TextWidgetClass Tier {
+     ignorepointer 1
+     size 0.125 1
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "#trader_list_requiredlevel"
+     font "gui/fonts/amorserifpro16"
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass Radius {
+     ignorepointer 1
+     position 0.125 0
+     size 0.125 1
+     valign center_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "#pp_items_radius"
+     font "gui/fonts/amorserifpro16"
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass Validity {
+     ignorepointer 1
+     position 0.25 0
+     size 0.125 1
+     valign center_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "#pp_items_time"
+     font "gui/fonts/amorserifpro16"
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass LandTax {
+     ignorepointer 1
+     position 0.375 0
+     size 0.25 1
+     valign center_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "#pp_items_landtax"
+     font "gui/fonts/amorserifpro16"
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass PropertyTax {
+     ignorepointer 1
+     position 0.625 0
+     size 0.25 1
+     valign center_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "#pp_items_buildingtax"
+     font "gui/fonts/amorserifpro16"
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass Action {
+     ignorepointer 1
+     position 0.875 0
+     size 0.125 1
+     valign center_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+    }
+   }
+  }
+ }
+}

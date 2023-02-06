@@ -1,0 +1,1333 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  FrameWidgetClass NotifiersPanel {
+   visible 1
+   clipchildren 1
+   position 0 0
+   size 303 81
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   fixaspect fixwidth
+   priority 100
+   {
+    PanelWidgetClass Health {
+     clipchildren 1
+     inheritalpha 0
+     position 0 0
+     size 35 81
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     style blank
+     {
+      ImageWidgetClass IconHealth {
+       disabled 0
+       clipchildren 1
+       inheritalpha 0
+       ignorepointer 0
+       keepsafezone 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 0
+       size 35 35
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:dayz_gui image:iconHealth0"
+       mode blend
+       "src alpha" 1
+       "no wrap" 0
+       stretch 0
+       "flip u" 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HealthArrowUp3 {
+       visible 1
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 -27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HealthArrowUp2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HealthArrowUp1 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HealthArrowDown1 {
+       visible 0
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HealthArrowDown2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HealthArrowDown3 {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+     }
+    }
+    PanelWidgetClass Blood {
+     clipchildren 0
+     inheritalpha 0
+     position 43 0
+     size 35 81
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     style blank
+     {
+      ImageWidgetClass IconBlood {
+       clipchildren 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 0
+       size 35 35
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:dayz_gui image:iconBlood0"
+       mode blend
+       "src alpha" 1
+       "no wrap" 0
+       stretch 0
+       "flip u" 0
+       "flip v" 0
+       filter 1
+       nocache 0
+       {
+        TextWidgetClass BloodType {
+         color 0.8627 0.8627 0.8627 1
+         position -4 -2
+         size 17 12
+         halign right_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "AB"
+         font "gui/fonts/sdf_MetronLight24"
+         "text halign" center
+        }
+        TextWidgetClass BloodPosType {
+         color 0.8627 0.8627 0.8627 1
+         position -4 8
+         size 17 12
+         halign right_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "+"
+         font "gui/fonts/sdf_MetronLight24"
+         "text halign" center
+        }
+       }
+      }
+      ImageWidgetClass BloodArrowUp3 {
+       visible 1
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 -27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BloodArrowUp2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BloodArrowUp1 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BloodArrowDown1 {
+       visible 0
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BloodArrowDown2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BloodArrowDown3 {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+     }
+    }
+    PanelWidgetClass NotifierDivider {
+     color 1 1 1 0.2941
+     position 86 30
+     size 3 19
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+    }
+    PanelWidgetClass Temperature {
+     clipchildren 0
+     inheritalpha 0
+     position 139 0
+     size 35 81
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     style blank
+     {
+      ImageWidgetClass IconTemperature {
+       clipchildren 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 0
+       size 35 35
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:dayz_gui image:iconTemperature0"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip u" 0
+       "flip v" 0
+       filter 1
+       nocache 0
+       {
+        TextWidgetClass TemperatureValueTop {
+         visible 0
+         color 0.8627 0.8627 0.8627 1
+         position 0 -12
+         size 40 12
+         halign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         font "gui/fonts/sdf_MetronLight24"
+         "size to text h" 1
+         "text halign" center
+        }
+        TextWidgetClass TemperatureValueBottom {
+         visible 0
+         color 0.8627 0.8627 0.8627 1
+         position 0 -12
+         size 40 12
+         halign center_ref
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         font "gui/fonts/sdf_MetronLight24"
+         "size to text h" 1
+         "text halign" center
+        }
+        ImageWidgetClass HeatBuffer {
+         visible 1
+         color 0.8627 0.8627 0.8627 1
+         position -2.7406 -2.01861
+         size 13 13
+         halign right_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:iconHeatBuffer"
+         mode blend
+         "src alpha" 1
+         "no wrap" 1
+        }
+       }
+      }
+      ImageWidgetClass TemperatureArrowUp3 {
+       visible 1
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 -27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TemperatureArrowUp2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TemperatureArrowUp1 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TemperatureArrowDown1 {
+       visible 0
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TemperatureArrowDown2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TemperatureArrowDown3 {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+     }
+    }
+    PanelWidgetClass Hungry {
+     clipchildren 1
+     inheritalpha 0
+     position 182 0
+     size 35 81
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     style blank
+     {
+      ImageWidgetClass IconHungry {
+       color 0.8627 0.8627 0.8627 1
+       position 0 0
+       size 35 35
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:dayz_gui image:iconHungry0"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip u" 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HungryArrowUp3 {
+       visible 1
+       clipchildren 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HungryArrowUp2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HungryArrowUp1 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HungryArrowDown1 {
+       visible 0
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HungryArrowDown2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HungryArrowDown3 {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+     }
+    }
+    PanelWidgetClass Thirsty {
+     clipchildren 1
+     inheritalpha 0
+     position 225 0
+     size 35 81
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     style blank
+     {
+      ImageWidgetClass IconThirsty {
+       color 0.8627 0.8627 0.8627 1
+       position 0 0
+       size 35 35
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:dayz_gui image:iconThirsty0"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip u" 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass ThirstyArrowUp3 {
+       visible 1
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 -27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass ThirstyArrowUp2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass ThirstyArrowUp1 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass ThirstyArrowDown1 {
+       visible 0
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass ThirstyArrowDown2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass ThirstyArrowDown3 {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+     }
+    }
+    PanelWidgetClass Bacteria {
+     visible 0
+     clipchildren 1
+     inheritalpha 0
+     position 225 0
+     size 35 81
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     style blank
+     {
+      ImageWidgetClass IconBacteria {
+       color 0.8627 0.8627 0.8627 1
+       position 0 0
+       size 35 35
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:dayz_gui image:iconBacteria"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip u" 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BacteriaArrowUp3 {
+       visible 1
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 -27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BacteriaArrowUp2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BacteriaArrowUp1 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BacteriaArrowDown1 {
+       visible 0
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BacteriaArrowDown2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BacteriaArrowDown3 {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+     }
+    }
+    PanelWidgetClass Tiredness {
+     clipchildren 1
+     inheritalpha 0
+     position 96 0
+     size 35 81
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     style blank
+     {
+      ImageWidgetClass TirednessArrowUp3 {
+       visible 1
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 -27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TirednessArrowUp2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TirednessArrowUp1 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 1
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TirednessArrowDown1 {
+       visible 0
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp1"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TirednessArrowDown2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp2"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TirednessArrowDown3 {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:dayz_gui image:iconArrowUp3"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass IconTiredness {
+       color 0.8627 0.8627 0.8627 1
+       position 0 0
+       size 35 35
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:nd_dayz_gui image:iconTiredness0"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip u" 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+     }
+    }
+   }
+  }
+ }
+}

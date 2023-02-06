@@ -1,0 +1,259 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 332 98
+ valign bottom_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  PanelWidgetClass PlayerPanelRadiation {
+   ignorepointer 1
+   position 0 0
+   size 332 98
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   {
+    PanelWidgetClass ShieldPanel {
+     ignorepointer 1
+     position 0 0
+     size 64 74
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass RadiationShield {
+       inheritalpha 0
+       size 32 32
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:nd_dayz_gui image:shield"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+      TextWidgetClass RadiationShieldValue {
+       ignorepointer 1
+       position 0 32
+       size 1 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass RadiationShieldUnit {
+       ignorepointer 1
+       size 1 18
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       text "%"
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass DosesPanel {
+     ignorepointer 1
+     position 136 0
+     size 96 74
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass DosesIcon {
+       visible 1
+       inheritalpha 0
+       size 32 32
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:nd_dayz_gui image:dosimeter"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+      TextWidgetClass DosesUnit {
+       ignorepointer 1
+       size 1 18
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       text "mSv"
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass DosesValue {
+       ignorepointer 1
+       position 0 32
+       size 1 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       text "123"
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass GeigerPanel {
+     ignorepointer 1
+     position 236 0
+     size 96 98
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      PanelWidgetClass GeigerCounterPanel {
+       visible 1
+       inheritalpha 0
+       position 0 0
+       size 68 56
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       {
+        ImageWidgetClass GeigerDial {
+         color 0.6275 0.6275 0.6275 1
+         position 0 0
+         size 68 56
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 ""
+         imageTexture "{22721E7344C22D6A}gui/textures/cardial_small.edds"
+         mode blend
+         "src alpha" 1
+         "no wrap" 1
+         stretch 1
+         "flip u" 1
+         Mask "{48BFB4B086E16C62}gui/textures/cardial_small_mask.edds"
+         "Transition width" 0
+         {
+          ImageWidgetClass GeigerPointer {
+           clipchildren 0
+           position 0 -0.05
+           size 13 40
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 0
+           hexactsize 1
+           vexactsize 1
+           image0 "set:dayz_gui image:small_pointer"
+           mode blend
+           "src alpha" 1
+           rotation 0 0 20
+           pivot 0.5 0.7
+          }
+         }
+        }
+       }
+      }
+      TextWidgetClass GeigerValue {
+       ignorepointer 1
+       position 0 18
+       size 1 24
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       text "123"
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass GeigerUnit {
+       ignorepointer 1
+       size 1 18
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       text "mSv/h"
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass ShieldPanelChemical {
+     ignorepointer 1
+     position 68 0
+     size 64 74
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass ChemicalShieldIcon {
+       inheritalpha 0
+       size 32 32
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:nd_dayz_gui image:shield"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+      TextWidgetClass ChemicalShieldValue {
+       ignorepointer 1
+       position 0 32
+       size 1 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass RadiationShieldUnit0 {
+       ignorepointer 1
+       size 1 18
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       text "%"
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+ }
+}

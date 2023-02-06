@@ -1,0 +1,23 @@
+
+#ifdef NAMALSK_SURVIVAL	
+
+enum alpeConsumeType : EConsumeTypeNamalsk
+{
+	ENVIRO_POND_CONTAMINED,
+	ENVIRO_WELL_CONTAMINED,
+	ENVIRO_POND_CONTAMINED_FREEZING,
+	ENVIRO_SNOW_CONTAMINED_FROZEN,	
+}
+
+
+#else	
+
+enum alpeConsumeType : EConsumeType
+{
+	ENVIRO_POND_CONTAMINED,
+	ENVIRO_WELL_CONTAMINED,
+}
+
+
+
+#endif

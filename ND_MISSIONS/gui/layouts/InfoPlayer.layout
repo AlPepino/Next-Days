@@ -1,0 +1,942 @@
+FrameWidgetClass InfoPlayerFrame {
+ ignorepointer 1
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass InfoPagesWindow {
+   visible 1
+   ignorepointer 1
+   color 0 0 0 0.7843
+   position 0 0
+   size 0.9 0.9
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   style DayZDefaultPanel
+   {
+    PanelWidgetClass InfoPagesBackgroundWindow {
+     visible 1
+     ignorepointer 1
+     color 0 0 0 0.6235
+     position 0 0
+     size 0.98 0.95
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     style blank
+     {
+      PanelWidgetClass TopMenuWindow {
+       ignorepointer 1
+       color 0 0 0 0.6235
+       position 0 0.03
+       size 1 0.04
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style DayZDefaultPanel
+       {
+        WrapSpacerWidgetClass MenuPanel {
+         ignorepointer 1
+         position 0 0
+         size 0.95 0.98
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ButtonWidgetClass Menu1 {
+           visible 1
+           color 0.502 0 0 1
+           position 0 0
+           size 0.2 1
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           userID 11
+           style DayZDefaultButton
+           text "#ip_stats"
+           font "gui/fonts/amorserifpro-bold22"
+          }
+          ButtonWidgetClass Menu2 {
+           visible 0
+           disabled 1
+           color 0.502 0 0 1
+           position 0.2 0
+           size 0.2 1
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           userID 12
+           style DayZDefaultButton
+           text "#ip_yourmission"
+           font "gui/fonts/amorserifpro-bold22"
+          }
+          ButtonWidgetClass Menu3 {
+           visible 0
+           color 0.502 0 0 1
+           position 0.2 0
+           size 0.2 1
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           userID 13
+           style DayZDefaultButton
+           text "#ip_teamup"
+           font "gui/fonts/amorserifpro-bold22"
+          }
+          ButtonWidgetClass Menu4 {
+           visible 0
+           color 0.502 0 0 1
+           position 0.4 0
+           size 0.2 1
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           userID 14
+           style DayZDefaultButton
+           text "#ip_halloffame"
+           font "gui/fonts/amorserifpro-bold22"
+          }
+          ButtonWidgetClass Menu5 {
+           visible 0
+           color 0.4941 0.4941 0.4941 1
+           position 0.8 0
+           size 0.2 1
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           userID 14
+           style DayZDefaultButton
+           text "Menu4"
+           font "gui/fonts/amorserifpro-bold22"
+          }
+         }
+        }
+        ButtonWidgetClass CloseBtn {
+         position 0 0
+         size 0.04 1
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         userID 1
+         {
+          ImageWidgetClass CloseIcon {
+           ignorepointer 1
+           position 0 0
+           size 32 32
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 1
+           vexactsize 1
+           image0 "set:dayz_gui image:icon_x"
+           mode blend
+           "src alpha" 1
+           "no wrap" 1
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass BodyWindow {
+       ignorepointer 1
+       position 0 0.1
+       size 1 0.89
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        PanelWidgetClass BodyWindowStats {
+         visible 1
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         hexactpos 1
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style blank
+         {
+          WrapSpacerWidgetClass BodyLeftWindow {
+           ignorepointer 1
+           position 0.01 0
+           size 600 1
+           hexactpos 0
+           vexactpos 0
+           hexactsize 1
+           vexactsize 0
+           Padding 10
+           Margin 0
+           {
+            WrapSpacerWidgetClass BL_groupHealth {
+             ignorepointer 1
+             position 0 0
+             size 1 30
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 1
+             style Colorable
+             Padding 0
+             Margin 0
+             "Size To Content V" 1
+             {
+              PanelWidgetClass BL_titleBG0 {
+               ignorepointer 1
+               color 0 0 0 0.8627
+               position 0 0
+               size 180 30
+               hexactpos 1
+               vexactpos 1
+               hexactsize 1
+               vexactsize 1
+               style DayZDefaultPanel
+               {
+                TextWidgetClass BL_title0 {
+                 ignorepointer 1
+                 position 2 0
+                 size 176 26
+                 valign center_ref
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 text "#ip_health"
+                 "text valign" center
+                }
+               }
+              }
+              WrapSpacerWidgetClass Bl_groupHealthContainer {
+               ignorepointer 1
+               color 0 0 0 0.702
+               position 0 30
+               size 1 36
+               hexactpos 1
+               vexactpos 1
+               hexactsize 0
+               vexactsize 1
+               style DayZDefaultPanel
+               Padding 0
+               Margin 0
+               "Size To Content V" 1
+              }
+             }
+            }
+            WrapSpacerWidgetClass BL_groupAbility {
+             visible 1
+             ignorepointer 1
+             position 0 0
+             size 1 30
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 1
+             style Colorable
+             Padding 0
+             Margin 0
+             "Size To Content V" 1
+             {
+              PanelWidgetClass BL_titleBG2 {
+               ignorepointer 1
+               color 0 0 0 0.8627
+               position 0 0
+               size 180 30
+               hexactpos 1
+               vexactpos 1
+               hexactsize 1
+               vexactsize 1
+               style DayZDefaultPanel
+               {
+                TextWidgetClass BL_title2 {
+                 ignorepointer 1
+                 position 2 0
+                 size 176 26
+                 valign center_ref
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 text "#ip_ability"
+                 "text valign" center
+                }
+               }
+              }
+              WrapSpacerWidgetClass Bl_groupStatsContainer {
+               ignorepointer 1
+               color 0 0 0 0.702
+               position 0 30
+               size 1 36
+               hexactpos 1
+               vexactpos 1
+               hexactsize 0
+               vexactsize 1
+               style DayZDefaultPanel
+               Padding 0
+               Margin 0
+               "Size To Content V" 1
+              }
+             }
+            }
+            WrapSpacerWidgetClass BL_groupResistance {
+             visible 1
+             ignorepointer 1
+             position 0 0
+             size 1 30
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 1
+             style Colorable
+             Padding 0
+             Margin 0
+             "Size To Content V" 1
+             {
+              PanelWidgetClass BL_titleBG3 {
+               ignorepointer 1
+               color 0 0 0 0.8627
+               position 0 0
+               size 180 30
+               hexactpos 1
+               vexactpos 1
+               hexactsize 1
+               vexactsize 1
+               style DayZDefaultPanel
+               {
+                TextWidgetClass BL_title3 {
+                 ignorepointer 1
+                 position 2 0
+                 size 176 26
+                 valign center_ref
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 text "#ip_resistance"
+                 "text valign" center
+                }
+               }
+              }
+              WrapSpacerWidgetClass Bl_groupResistanceContainer {
+               ignorepointer 1
+               color 0 0 0 0.702
+               position 0 30
+               size 1 36
+               hexactpos 1
+               vexactpos 1
+               hexactsize 0
+               vexactsize 1
+               style DayZDefaultPanel
+               Padding 0
+               Margin 0
+               "Size To Content V" 1
+              }
+             }
+            }
+            PanelWidgetClass BL_groupReputation {
+             visible 1
+             ignorepointer 1
+             position 0 0
+             size 1 116
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 1
+             style blank
+             {
+              PanelWidgetClass BL_titleBG1 {
+               ignorepointer 1
+               color 0 0 0 0.8627
+               position 0 0
+               size 180 30
+               hexactpos 1
+               vexactpos 1
+               hexactsize 1
+               vexactsize 1
+               style DayZDefaultPanel
+               {
+                TextWidgetClass BL_title1 {
+                 ignorepointer 1
+                 position 2 0
+                 size 176 26
+                 valign center_ref
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 text "#ip_reputation"
+                 "text valign" center
+                }
+               }
+              }
+              WrapSpacerWidgetClass Bl_groupReputationContainer {
+               ignorepointer 1
+               color 0 0 0 0.702
+               position 0 30
+               size 1 86
+               hexactpos 1
+               vexactpos 1
+               hexactsize 0
+               vexactsize 1
+               style DayZDefaultPanel
+               Padding 0
+               Margin 0
+               "Size To Content V" 1
+              }
+             }
+            }
+           }
+          }
+          PanelWidgetClass BodyRightWindow {
+           ignorepointer 1
+           position 0.01 0
+           size 0.485 1
+           halign right_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            PlayerPreviewWidgetClass BR_PlayerPreview {
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+            }
+           }
+          }
+         }
+        }
+        PanelWidgetClass BodyWindowClan {
+         visible 0
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         hexactpos 1
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style blank
+         {
+          PanelWidgetClass BodyLeftWindowClan {
+           visible 0
+           ignorepointer 1
+           color 0.5333 0.5333 0.5333 0.502
+           position 0 0
+           size 0.485 0.95
+           valign bottom_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            PanelWidgetClass PanelWidget1 {
+             ignorepointer 1
+             position 0 0.1
+             size 1 0.89
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              TextListboxWidgetClass ClanPlayers {
+               position 0 0.06
+               size 1 1
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               priority 1
+               style Default
+               "title visible" 0
+               colums "Players"
+               lines 15
+               font "gui/fonts/amorserifpro22"
+              }
+              PanelWidgetClass ClanPlayersBG {
+               ignorepointer 1
+               color 0 0 0 0.349
+               position 0 0
+               size 1 40
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 1
+               style editor_selection
+               {
+                TextWidgetClass TextWidget1 {
+                 ignorepointer 1
+                 size 0.9 0.9
+                 halign center_ref
+                 valign center_ref
+                 hexactpos 0
+                 vexactpos 0
+                 hexactsize 0
+                 vexactsize 0
+                 text "#ip_playersonline"
+                 font "gui/fonts/amorserifpro22"
+                 "exact text" 1
+                 "text halign" center
+                 "text valign" center
+                }
+               }
+              }
+             }
+            }
+            PanelWidgetClass PanelWidget2 {
+             ignorepointer 1
+             position 0 0
+             size 1 0.1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              ButtonWidgetClass ButtonWidget3 {
+               color 0 0 0 0.702
+               position 0.05 0
+               size 0.25 40
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 1
+               userID 301
+               style Colorable
+               text "#ip_sendinvite"
+               font "gui/fonts/amorserifpro16"
+              }
+              ButtonWidgetClass ButtonWidget4 {
+               visible 1
+               color 0 0 0 0.702
+               position 0.35 0
+               size 0.25 40
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 1
+               userID 302
+               style Colorable
+               text "#ip_acceptinvite"
+               font "gui/fonts/amorserifpro16"
+              }
+              ButtonWidgetClass ButtonWidget5 {
+               visible 1
+               color 0 0 0 0.702
+               position 0.65 0
+               size 0.25 40
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 1
+               userID 303
+               style Colorable
+               text "#ip_declinetinvite"
+               font "gui/fonts/amorserifpro16"
+              }
+             }
+            }
+           }
+          }
+          PanelWidgetClass BodyRightWindowClan {
+           ignorepointer 1
+           size 0.485 0.95
+           valign bottom_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            PanelWidgetClass PanelWidget0 {
+             ignorepointer 1
+             position 0 0
+             size 1 0.1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              ButtonWidgetClass ButtonWidget0 {
+               color 0 0 0 0.702
+               position 0.05 0
+               size 0.25 40
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 1
+               userID 304
+               style Colorable
+               text "#ip_newclan"
+               font "gui/fonts/amorserifpro16"
+              }
+              ButtonWidgetClass ButtonWidget1 {
+               color 0 0 0 0.702
+               position 0.35 0
+               size 0.25 40
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 1
+               userID 305
+               style Colorable
+               text "#ip_leaveclan"
+               font "gui/fonts/amorserifpro16"
+              }
+              ButtonWidgetClass ButtonWidget2 {
+               color 0 0 0 0.702
+               position 0.65 0
+               size 0.25 40
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 1
+               userID 306
+               style Colorable
+               text "#ip_kickfromclan"
+               font "gui/fonts/amorserifpro16"
+              }
+             }
+            }
+            PanelWidgetClass PanelWidget3 {
+             ignorepointer 1
+             position 0 0.1
+             size 1 0.1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              PanelWidgetClass PanelWidget4 {
+               ignorepointer 1
+               position 0 0
+               size 0.4 1
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               {
+                TextWidgetClass TextWidget0 {
+                 ignorepointer 1
+                 size 0.98 40
+                 halign center_ref
+                 valign center_ref
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 0
+                 vexactsize 1
+                 style Normal
+                 text "#ip_nameclan"
+                 font "gui/fonts/amorserifpro22"
+                 "exact text" 1
+                 "size to text v" 1
+                 "text halign" right
+                 "text valign" center
+                }
+               }
+              }
+              PanelWidgetClass PanelWidget5 {
+               ignorepointer 1
+               position 0 0
+               size 0.6 1
+               halign right_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               {
+                EditBoxWidgetClass NameOfNewClan {
+                 color 0.7451 0.1804 0.1804 1
+                 position 0 0
+                 size 0.98 40
+                 halign center_ref
+                 valign center_ref
+                 hexactpos 0
+                 vexactpos 0
+                 hexactsize 0
+                 vexactsize 1
+                 priority 1
+                 style Default
+                 "limit visible" 0
+                 "Use default text" 0
+                 "exact text" 1
+                 font "gui/fonts/amorserifpro22"
+                }
+                PanelWidgetClass PanelWidget8 {
+                 ignorepointer 1
+                 color 0 0 0 0.6235
+                 position 0 0
+                 size 0.98 40
+                 halign center_ref
+                 valign center_ref
+                 hexactpos 0
+                 vexactpos 0
+                 hexactsize 0
+                 vexactsize 1
+                 style editor_quad
+                }
+               }
+              }
+             }
+            }
+            PanelWidgetClass PanelWidget6 {
+             ignorepointer 1
+             position 0 0.2
+             size 1 0.8
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              PanelWidgetClass PanelWidget7 {
+               ignorepointer 1
+               color 0 0 0 0.349
+               position 0 0
+               size 1 40
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 1
+               style editor_selection
+               {
+                TextWidgetClass ClanName {
+                 ignorepointer 1
+                 size 0.9 0.9
+                 halign center_ref
+                 valign center_ref
+                 hexactpos 0
+                 vexactpos 0
+                 hexactsize 0
+                 vexactsize 0
+                 text "..."
+                 font "gui/fonts/amorserifpro22"
+                 "exact text" 1
+                 "text halign" center
+                 "text valign" center
+                }
+               }
+              }
+              TextListboxWidgetClass ClanMembers {
+               position 0 0.065
+               size 1 1
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               priority 1
+               "title visible" 0
+               colums "YourClan"
+               lines 15
+               font "gui/fonts/amorserifpro22"
+              }
+             }
+            }
+           }
+          }
+          WrapSpacerWidgetClass BodyTopWindowClan {
+           visible 1
+           ignorepointer 1
+           position 0 0
+           size 1 0.05
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            CheckBoxWidgetClass Clan_DisplayIcon {
+             position 0 0
+             size 400 1
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 1
+             vexactsize 0
+             userID 310
+             text "#ip_cs_displayIcon"
+             font "gui/fonts/amorserifpro22"
+            }
+           }
+          }
+         }
+        }
+        PanelWidgetClass BodyWindowHallOfFame {
+         visible 0
+         ignorepointer 1
+         position 0.01 0
+         size 0.98 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          PanelWidgetClass BWHOF_titleBG {
+           ignorepointer 1
+           color 0 0 0 0.349
+           position 0 0
+           size 1 40
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 1
+           style editor_selection
+           {
+            TextWidgetClass TextWidget2 {
+             ignorepointer 1
+             position 0.03 0
+             size 0.22 0.98
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "#ip_hf_name"
+             font "gui/fonts/amorserifpro22"
+             "size to text h" 0
+             "size to text v" 0
+             "text valign" center
+            }
+            TextWidgetClass TextWidget3 {
+             ignorepointer 1
+             position 0.25 0
+             size 0.15 0.98
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "#ip_hf_reputation"
+             font "gui/fonts/amorserifpro22"
+             "size to text h" 0
+             "size to text v" 0
+             "text valign" center
+            }
+            TextWidgetClass TextWidget4 {
+             ignorepointer 1
+             position 0.4 0
+             size 0.15 0.98
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "#ip_hf_killedplayers"
+             font "gui/fonts/amorserifpro22"
+             "size to text h" 0
+             "size to text v" 0
+             "text valign" center
+            }
+            TextWidgetClass TextWidget5 {
+             ignorepointer 1
+             position 0.55 0
+             size 0.15 0.98
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "#ip_hf_skinnedplayers"
+             font "gui/fonts/amorserifpro22"
+             "size to text h" 0
+             "size to text v" 0
+             "text valign" center
+            }
+            TextWidgetClass TextWidget6 {
+             ignorepointer 1
+             position 0.7 0
+             size 0.15 0.98
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "#ip_hf_killedzombies"
+             font "gui/fonts/amorserifpro22"
+             "size to text h" 0
+             "size to text v" 0
+             "text valign" center
+            }
+            TextWidgetClass TextWidget7 {
+             ignorepointer 1
+             position 0.85 0
+             size 0.15 0.98
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "#ip_hf_killedanimals"
+             font "gui/fonts/amorserifpro22"
+             "size to text h" 0
+             "size to text v" 0
+             "text valign" center
+            }
+           }
+          }
+          PanelWidgetClass BWHOF_listBG {
+           ignorepointer 1
+           position 0 40
+           size 1 0.9
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           {
+            TextListboxWidgetClass HallOfFameList {
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             "title visible" 0
+             colums "id;3;name;22;rep;15;kp;15;sp;15;kz;15;ka;15"
+             lines 30
+             font "gui/fonts/amorserifpro22"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,336 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 250 374
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  PanelWidgetClass ItemMainPanel {
+   ignorepointer 1
+   color 0 0 0 0.5059
+   position 0 0
+   size 246 362
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style DayZDefaultPanel
+   {
+    MultilineTextWidgetClass ItemDescription {
+     ignorepointer 1
+     position 0 216
+     size 242 67
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     font "gui/fonts/amorserifpro16"
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     wrap 1
+    }
+    PanelWidgetClass ItemAction {
+     ignorepointer 1
+     position 0 285
+     size 242 72
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      PanelWidgetClass ItemPricePanel {
+       ignorepointer 1
+       color 0.0314 0.502 0.0392 1
+       position 36 0
+       size 140 32
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style blank
+       {
+        TextWidgetClass ItemPrice {
+         ignorepointer 1
+         position 0 0
+         size 0.9 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "0"
+         font "gui/fonts/amorserifpro-bold22"
+         "text color" 0.0314 0.502 0.0392 1
+         "text halign" right
+         "text valign" center
+        }
+       }
+      }
+      ButtonWidgetClass ButtonPlus {
+       color 0.8353 0.2235 0.2235 1
+       position 2 0
+       size 32 32
+       halign right_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        ImageWidgetClass PlusIcon {
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         image0 "set:dayz_gui image:Expand"
+         mode blend
+         "src alpha" 1
+         stretch 1
+        }
+       }
+      }
+      ButtonWidgetClass ButtonMinus {
+       color 0.8353 0.2235 0.2235 1
+       position 2 0
+       size 32 32
+       halign right_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        ImageWidgetClass MinusIcon {
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         image0 "set:dayz_gui image:Collapse"
+         mode blend
+         "src alpha" 1
+         stretch 1
+        }
+       }
+      }
+      ImageWidgetClass AvailableIcon {
+       ignorepointer 1
+       position 4 6
+       size 24 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 1
+      }
+      ImageWidgetClass InCartIcon {
+       ignorepointer 1
+       color 0.6588 0.6588 0.6588 1
+       position 4 6
+       size 24 24
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 1
+      }
+      TextWidgetClass AvailableValue {
+       ignorepointer 1
+       position 16 6
+       size 60 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       font "gui/fonts/amorserifpro-bold14"
+       "text valign" center
+      }
+      TextWidgetClass InCartValue {
+       ignorepointer 1
+       position 16 6
+       size 60 24
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "0"
+       font "gui/fonts/amorserifpro-bold14"
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass ItemWeightWidgetBackground {
+     ignorepointer 1
+     color 0 0 0 1
+     size 0.5 24
+     halign right_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     style rover_sim_colorable
+     {
+      TextWidgetClass ItemWeightWidget {
+       ignorepointer 1
+       position 2 0
+       size 1 1
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       priority 1
+       font "gui/fonts/amorserifpro-bold14"
+       "text halign" right
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass ItemQuantityWidgetBackground {
+     ignorepointer 1
+     color 0 0 0 1
+     size 0.5 24
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     style rover_sim_colorable
+     {
+      TextWidgetClass ItemQuantityWidget {
+       ignorepointer 1
+       position 2 0
+       size 1 1
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       priority 1
+       font "gui/fonts/amorserifpro-bold14"
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass ItemTitlePanel {
+     ignorepointer 1
+     position 0 160
+     size 246 30
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     priority 5
+     {
+      TextWidgetClass ItemTitle {
+       ignorepointer 1
+       position 4 0
+       size 220 1
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       priority 5
+       style Bold
+       font "gui/fonts/amorserifpro22"
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass ItemValuePanel {
+     ignorepointer 1
+     position 0 182
+     size 246 32
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      TextWidgetClass ItemValue {
+       ignorepointer 1
+       position 2 0
+       size 220 1
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       priority 1
+       style Bold
+       font "gui/fonts/amorserifpro22"
+       "text halign" right
+       "text valign" center
+      }
+      ImageWidgetClass ItemReputationIcon {
+       ignorepointer 1
+       size 85 32
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+    ButtonWidgetClass InspectItemButton {
+     inheritalpha 0
+     ignorepointer 0
+     size 246 180
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style Default
+     {
+      ItemPreviewWidgetClass ItemPreview {
+       ignorepointer 1
+       position 0 0
+       size 246 180
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,867 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass ATM_window {
+   visible 1
+   ignorepointer 1
+   color 0 0 0 0.7451
+   position 0 0
+   size 0.5 0.8
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   style DayZDefaultPanel
+   {
+    WrapSpacerWidgetClass ATM_mainhead {
+     ignorepointer 1
+     position 0 0.02
+     size 0.98 0.05
+     halign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     Padding 0
+     Margin 0
+     {
+      ButtonWidgetClass BTN_0_login {
+       visible 1
+       color 0 0 0 0.702
+       position 0 0
+       size 0.25 0.99
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       userID 1
+       style Colorable
+       text "#alp_atm_login"
+      }
+      ButtonWidgetClass BTN_0_currency {
+       visible 0
+       color 0 0 0 0.702
+       position 0 0
+       size 0.25 1
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       userID 20
+       style Colorable
+       text "#tc_currency"
+      }
+      ButtonWidgetClass BTN_0_account {
+       visible 0
+       color 0 0 0 0.702
+       position 0 0
+       size 0.25 1
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       userID 30
+       style Colorable
+       text "#alp_atm_account"
+      }
+     }
+    }
+    PanelWidgetClass ATM_mainpanel {
+     ignorepointer 1
+     color 0.1569 0.2745 0.6235 1
+     position 0 0.07
+     size 0.98 0.91
+     halign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_colorable
+     {
+      PanelWidgetClass Login {
+       visible 1
+       ignorepointer 1
+       color 0 0 0 0.7843
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style blank
+       {
+        TextWidgetClass Login_Title {
+         ignorepointer 1
+         position 0 0.05
+         size 0.9 0.1
+         halign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "#alp_atm_logintitle"
+         "text halign" center
+         "text valign" center
+        }
+        EditBoxWidgetClass PIN_Input {
+         position 0 0
+         size 0.15 0.08
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         scaled 0
+         style Editor
+         text "1234"
+         "limit visible" 0
+         "Use default text" 0
+         "exact text" 0
+         font "gui/fonts/metronblack"
+        }
+        TextWidgetClass TitlePIN {
+         ignorepointer 1
+         position -0.23 0
+         size 0.3 0.05
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "#alp_atm_pin"
+         "text halign" right
+         "text valign" center
+        }
+        TextWidgetClass TitlePINNEW {
+         visible 0
+         ignorepointer 1
+         position -0.23 0.1
+         size 0.3 0.05
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "#alp_atm_newpin"
+         "text halign" right
+         "text valign" center
+        }
+        EditBoxWidgetClass NEWPIN_Input {
+         visible 0
+         position 0 0.1
+         size 0.15 0.08
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         scaled 0
+         style Editor
+         text "1234"
+         "limit visible" 0
+         "Use default text" 0
+         "exact text" 0
+         font "gui/fonts/metronblack"
+        }
+        TextWidgetClass TitlePINNEW2 {
+         visible 0
+         ignorepointer 1
+         position -0.23 0.2
+         size 0.3 0.05
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "#alp_atm_newpin"
+         "text halign" right
+         "text valign" center
+        }
+        EditBoxWidgetClass NEWPIN2_Input {
+         visible 0
+         position 0 0.2
+         size 0.15 0.08
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         scaled 0
+         style Editor
+         text "1234"
+         "limit visible" 0
+         "Use default text" 0
+         "exact text" 0
+         font "gui/fonts/metronblack"
+        }
+        ButtonWidgetClass BTN_1_confirm {
+         color 0.0784 0.1333 0.298 1
+         position 0 0.02
+         size 0.25 0.05
+         halign center_ref
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         userID 2
+         style Colorable
+         text "#trader_cart_confirm"
+        }
+        ButtonWidgetClass BTN_1_changepsw {
+         color 0.0784 0.1333 0.298 1
+         position -0.36 0.02
+         size 0.25 0.05
+         halign center_ref
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         userID 3
+         style Colorable
+         text "#alp_atm_changepswd"
+        }
+        ButtonWidgetClass BTN_1_logout {
+         visible 0
+         color 0.0784 0.1333 0.298 1
+         position 0.36 0.02
+         size 0.25 0.05
+         halign center_ref
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         userID 4
+         style Colorable
+         text "#alp_atm_logout"
+        }
+        TextWidgetClass Login_Message {
+         ignorepointer 1
+         position 0 -0.1
+         size 0.9 0.05
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "WRONG PSW"
+         "text color" 1 0 0 1
+         "exact text" 0
+         "size to text v" 1
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+      PanelWidgetClass Currency {
+       visible 0
+       ignorepointer 1
+       color 0 0 0 0.7843
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style blank
+       {
+        TextWidgetClass CurrencyTitle {
+         ignorepointer 1
+         position 0 0.05
+         size 0.9 0.1
+         halign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "#alp_atm_choosecurrency"
+         "text halign" center
+         "text valign" center
+        }
+        XComboBoxWidgetClass CurrencyInput {
+         position 0 0
+         size 0.25 0.05
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Default
+         items "neco"
+        }
+        ButtonWidgetClass BTN_2_confirm {
+         color 0.0784 0.1333 0.298 1
+         position 0 0.02
+         size 0.25 0.05
+         halign center_ref
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         userID 21
+         style Colorable
+         text "#trader_cart_confirm"
+        }
+       }
+      }
+      PanelWidgetClass Account {
+       visible 0
+       ignorepointer 1
+       color 0 0 0 0.7843
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style blank
+       {
+        TextWidgetClass AccountTitle {
+         ignorepointer 1
+         position 0 0.05
+         size 0.9 0.1
+         halign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "Nazev uctu"
+         "text halign" center
+         "text valign" center
+        }
+        TextWidgetClass AccountBalanceTitle {
+         ignorepointer 1
+         position -0.35 -0.3
+         size 0.2 0.05
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "#trader_cart_balance"
+         "text valign" center
+        }
+        TextWidgetClass AccountBalance {
+         ignorepointer 1
+         position 0.06 -0.3
+         size 0.6 0.05
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "1234 CZK"
+         "text valign" center
+        }
+        TextWidgetClass AccountLoansTitle {
+         ignorepointer 1
+         position -0.35 -0.24
+         size 0.2 0.05
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "#alp_atm_loans"
+         "text valign" center
+        }
+        RichTextWidgetClass AccountLoans {
+         ignorepointer 1
+         position 0.06 -0.24
+         size 0.6 0.05
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "0 CZK"
+         "exact text" 0
+         "text valign" center
+        }
+        PanelWidgetClass AccountInnerWindow {
+         visible 1
+         ignorepointer 1
+         position 0 0.09
+         size 0.9 0.6
+         halign center_ref
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          PanelWidgetClass AccountWindow0 {
+           visible 0
+           ignorepointer 1
+           position 0 0
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            ButtonWidgetClass BTN_3_Withdraw {
+             color 0.0784 0.1333 0.298 1
+             position -0.25 -0.18005
+             size 0.4 0.1
+             halign center_ref
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             userID 35
+             style Colorable
+             text "#alp_atm_withdraw"
+            }
+            ButtonWidgetClass BTN_3_Deposit {
+             color 0.0784 0.1333 0.298 1
+             position 0.25 -0.18005
+             size 0.4 0.1
+             halign center_ref
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             userID 36
+             style Colorable
+             text "#alp_atm_deposit"
+            }
+            ButtonWidgetClass BTN_3_LoanTake {
+             color 0.0784 0.1333 0.298 1
+             position -0.25 -0.03005
+             size 0.4 0.1
+             halign center_ref
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             userID 37
+             style Colorable
+             text "#alp_atm_takeloan"
+            }
+            ButtonWidgetClass BTN_3_LoanPay {
+             color 0.0784 0.1333 0.298 1
+             position 0.25 -0.03005
+             size 0.4 0.1
+             halign center_ref
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             userID 38
+             style Colorable
+             text "#alp_atm_payloan"
+            }
+            ButtonWidgetClass BTN_3_Exchange {
+             color 0.0784 0.1333 0.298 1
+             position -0.25 0.1199
+             size 0.4 0.1
+             halign center_ref
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             userID 39
+             style Colorable
+             text "#alp_atm_exchange"
+            }
+            ButtonWidgetClass BTN_3_Cards {
+             color 0.0784 0.1333 0.298 1
+             position 0.25 0.1199
+             size 0.4 0.1
+             halign center_ref
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             userID 40
+             style Colorable
+             text "#alp_atm_cards"
+            }
+           }
+          }
+          PanelWidgetClass AccountWindow1 {
+           visible 0
+           ignorepointer 1
+           position 0 0
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            TextWidgetClass AccountTransactionTitle {
+             ignorepointer 1
+             position 0 0.3
+             size 0.9 0.1
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "Withdraw"
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+          PanelWidgetClass AccountWindow2 {
+           visible 0
+           ignorepointer 1
+           position 0 0
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            TextWidgetClass AccountTakeLoanTitle {
+             visible 1
+             ignorepointer 1
+             position 0 0.23
+             size 0.9 0.1
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "#alp_atm_takeloan"
+             "text halign" center
+             "text valign" center
+            }
+            XComboBoxWidgetClass LoanLength {
+             position 0 0.11
+             size 0.3 0.05
+             halign center_ref
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             userID 70
+             style Default
+             items "#alp_atm_loans_terms;1;2;3;4;5;6;7;8;9;10;11;12;13;14"
+            }
+            TextWidgetClass LoanTerms {
+             ignorepointer 1
+             position 0 0.67
+             size 0.3 0.05
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             "text halign" center
+             "text valign" center
+            }
+            TextWidgetClass LoanTotal {
+             ignorepointer 1
+             position 0 0.75
+             size 0.3 0.05
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             "text halign" center
+             "text valign" center
+            }
+            TextWidgetClass AccountLoanLimitTitle {
+             ignorepointer 1
+             position 0 0.37
+             size 0.9 0.05
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+          PanelWidgetClass AccountWindow3 {
+           visible 0
+           ignorepointer 1
+           position 0 0
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            TextWidgetClass AccountPayLoanTitle {
+             ignorepointer 1
+             position 0 0.3
+             size 0.9 0.1
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "#alp_atm_payloan"
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+          PanelWidgetClass AccountWindow4 {
+           visible 0
+           ignorepointer 1
+           position 0 0
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            TextWidgetClass AccountExchangeTitle {
+             ignorepointer 1
+             position 0 0.06
+             size 0.9 0.1
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "Buy currency"
+             "text halign" center
+             "text valign" center
+            }
+            XComboBoxWidgetClass ExhangeCurrency {
+             position 0 -0.25
+             size 0.25 0.1
+             halign center_ref
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             userID 90
+             style Default
+             items "item"
+            }
+            TextWidgetClass ExchangeRate {
+             ignorepointer 1
+             position 0 0.58
+             size 0.9 0.08
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "4 % p.d."
+             "text halign" center
+             "text valign" center
+            }
+            TextWidgetClass ExchangeTotal {
+             ignorepointer 1
+             position 0 0.7
+             size 0.9 0.08
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "Total"
+             "text halign" center
+             "text valign" center
+            }
+            TextWidgetClass ExchangeAvailable {
+             ignorepointer 1
+             position 0 0.34
+             size 0.9 0.08
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+          PanelWidgetClass AccountWindow5 {
+           visible 1
+           ignorepointer 1
+           position 0 0
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            TextWidgetClass AccountCardsTitle {
+             ignorepointer 1
+             position 0 0.02
+             size 0.9 0.1
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "#alp_atm_cards_title"
+             "text halign" center
+             "text valign" center
+            }
+            TextListboxWidgetClass CardsList {
+             position 0 0
+             size 0.9 0.7
+             halign center_ref
+             valign bottom_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             style NoScrollBar
+             "title visible" 1
+             colums "#alp_atm_cards_id;50;;50"
+             lines 8
+             font "gui/fonts/metron22"
+            }
+            TextWidgetClass AccountCardsTitle0 {
+             ignorepointer 1
+             position 0 0.17
+             size 0.9 0.06
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "#alp_atm_cards_block"
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+         }
+        }
+        ButtonWidgetClass BTN_3_confirm {
+         visible 0
+         color 0.0784 0.1333 0.298 1
+         position 0 0.02
+         size 0.25 0.05
+         halign center_ref
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         userID 31
+         style Colorable
+         text "#trader_cart_confirm"
+        }
+        ButtonWidgetClass BTN_3_back {
+         visible 0
+         color 0.0784 0.1333 0.298 1
+         position -0.37 0.09
+         size 0.15 0.05
+         halign center_ref
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         userID 32
+         style Colorable
+         text "#menu_back"
+        }
+        EditBoxWidgetClass INPUT_account {
+         visible 1
+         position 0 0.11
+         size 0.25 0.06
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         scaled 0
+         style Editor
+         "limit visible" 0
+         "Use default text" 0
+         "exact text" 0
+         font "gui/fonts/metronblack"
+        }
+        TextWidgetClass AccountCashTitle {
+         visible 0
+         ignorepointer 1
+         position -0.34 -0.15
+         size 0.18 0.035
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "Your cash"
+        }
+        TextWidgetClass AccountCash {
+         visible 0
+         ignorepointer 1
+         position -0.0398 -0.15
+         size 0.4 0.035
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "1234 CZK"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

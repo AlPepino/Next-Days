@@ -1,0 +1,472 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 1 10
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ priority 500
+ {
+  PanelWidgetClass MainPanel {
+   ignorepointer 1
+   color 0 0 0 0.2706
+   position 32 100
+   size 650 600
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style DayZDefaultPanel
+   {
+    PanelWidgetClass Head {
+     visible 1
+     ignorepointer 1
+     position 0 0
+     size 1 36
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     {
+      PanelWidgetClass BalancePanel {
+       ignorepointer 1
+       position 0 0
+       size 180 32
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        TextWidgetClass BalanceText {
+         ignorepointer 1
+         size 146 30
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 0
+         hexactsize 1
+         vexactsize 1
+         text "0"
+         font "gui/fonts/amorserifpro22"
+         "text valign" center
+        }
+        ImageWidgetClass BalanceIcon {
+         ignorepointer 1
+         color 0.6588 0.6588 0.6588 1
+         size 32 32
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:notification_friend"
+         mode blend
+         "src alpha" 1
+         stretch 1
+        }
+       }
+      }
+      PanelWidgetClass CashBalancePanel {
+       visible 1
+       ignorepointer 1
+       position 40 0
+       size 250 1
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 0
+       hexactsize 1
+       vexactsize 0
+       {
+        ImageWidgetClass TerritoryIcon {
+         ignorepointer 1
+         color 0.6588 0.6588 0.6588 1
+         position 0 2
+         size 32 32
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:icon_flag"
+         mode blend
+         "src alpha" 1
+         stretch 1
+        }
+        TextWidgetClass TerritoryValue {
+         ignorepointer 1
+         position 34 3
+         size 70 30
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "0"
+         font "gui/fonts/amorserifpro-bold22"
+         "text valign" center
+        }
+        ImageWidgetClass TimeIcon {
+         ignorepointer 1
+         color 0.6588 0.6588 0.6588 1
+         position 106 2
+         size 32 32
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:icon_flag"
+         mode blend
+         "src alpha" 1
+         stretch 1
+        }
+        TextWidgetClass TimeValue {
+         ignorepointer 1
+         position 142 3
+         size 70 30
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "0"
+         font "gui/fonts/amorserifpro-bold22"
+         "text valign" center
+        }
+       }
+      }
+      ButtonWidgetClass CloseBtn {
+       position 0 0
+       size 36 36
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 1
+       {
+        ImageWidgetClass CloseIcon {
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         image0 "set:dayz_gui image:icon_x"
+         mode blend
+         "src alpha" 1
+         "no wrap" 1
+        }
+       }
+      }
+     }
+    }
+    WrapSpacerWidgetClass MenuPanel {
+     ignorepointer 1
+     position 0 40
+     size 1 36
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     Padding 4
+     Margin 0
+     content_valign bottom
+     {
+      ButtonWidgetClass MenuTaxes {
+       color 0 0 0 0.2706
+       position 0 0
+       size 50 32
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 100
+       style Colorable
+       font "gui/fonts/amorserifpro22"
+       switch normal
+       {
+        TextWidgetClass TextWidget0 {
+         visible 0
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "#pp_title"
+         font "gui/fonts/amorserifpro22"
+         "exact text" 1
+         "text halign" center
+         "text valign" center
+        }
+        ImageWidgetClass TaxesIcon {
+         ignorepointer 1
+         position 0 0
+         size 32 32
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:engine_on"
+         mode blend
+         "src alpha" 1
+         "no wrap" 0
+         stretch 1
+        }
+       }
+      }
+      ButtonWidgetClass MenuProperty {
+       color 0 0 0 0.2706
+       position 155 0
+       size 50 32
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 200
+       style Colorable
+       font "gui/fonts/amorserifpro22"
+       switch normal
+       {
+        TextWidgetClass TextWidget1 {
+         visible 0
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "#pp_title_estate"
+         font "gui/fonts/amorserifpro22"
+         "exact text" 1
+         "text halign" center
+         "text valign" center
+        }
+        ImageWidgetClass EstateIcon {
+         ignorepointer 1
+         position 0 0
+         size 32 32
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:engine_on"
+         mode blend
+         "src alpha" 1
+         "no wrap" 0
+         stretch 1
+        }
+       }
+      }
+      ButtonWidgetClass MenuKeys {
+       color 0 0 0 0.2706
+       position 310 0
+       size 50 32
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 300
+       style Colorable
+       font "gui/fonts/amorserifpro22"
+       switch normal
+       {
+        ImageWidgetClass keysIcon {
+         ignorepointer 1
+         position 0 0
+         size 32 32
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:engine_on"
+         mode blend
+         "src alpha" 1
+         "no wrap" 0
+         stretch 1
+        }
+       }
+      }
+      ButtonWidgetClass MenuImprovments {
+       color 0 0 0 0.2706
+       position 475 0
+       size 50 32
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 600
+       style Colorable
+       font "gui/fonts/amorserifpro22"
+       switch normal
+       {
+        ImageWidgetClass ImprovmentsIcon {
+         ignorepointer 1
+         position 0 0
+         size 32 32
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:icon_modded_sb"
+         mode blend
+         "src alpha" 1
+         stretch 1
+        }
+       }
+      }
+      ButtonWidgetClass MenuFingerprints {
+       color 0 0 0 0.2706
+       position 365 0
+       size 50 32
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 400
+       style Colorable
+       font "gui/fonts/amorserifpro22"
+       switch normal
+       {
+        ImageWidgetClass HandIcon {
+         ignorepointer 1
+         position 0 0
+         size 32 32
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:ccgui_enforce image:HudUse"
+         mode blend
+         "src alpha" 1
+         "no wrap" 0
+         stretch 1
+        }
+       }
+      }
+      ButtonWidgetClass MenuLockpicking {
+       color 0 0 0 0.2706
+       position 420 0
+       size 50 32
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 500
+       style Colorable
+       font "gui/fonts/amorserifpro22"
+       switch normal
+       {
+        ImageWidgetClass LockIcon {
+         ignorepointer 1
+         position 0 0
+         size 32 32
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:icon_locked_sb"
+         mode blend
+         "src alpha" 1
+         "no wrap" 0
+         stretch 1
+        }
+       }
+      }
+      ButtonWidgetClass MenuClanSetting {
+       color 0 0 0 0.2706
+       position 530 0
+       size 50 32
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 700
+       style Colorable
+       font "gui/fonts/amorserifpro22"
+       switch normal
+       {
+        ImageWidgetClass SettingIcon {
+         ignorepointer 1
+         position 0 0
+         size 32 32
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:settings"
+         mode blend
+         "src alpha" 1
+         "no wrap" 0
+         stretch 1
+        }
+       }
+      }
+     }
+    }
+    ScrollWidgetClass Body {
+     ignorepointer 1
+     position 0 112
+     size 1 480
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     "Scrollbar V" 1
+     {
+      WrapSpacerWidgetClass Items {
+       ignorepointer 1
+       position 0 0
+       size 1 0
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       Margin 0
+       "Size To Content V" 1
+      }
+     }
+    }
+    PanelWidgetClass BodyHead {
+     ignorepointer 1
+     color 0 0 0 0.8627
+     position 0 76
+     size 1 36
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style rover_sim_colorable
+    }
+   }
+  }
+ }
+}

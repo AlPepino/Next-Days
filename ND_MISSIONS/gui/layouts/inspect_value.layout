@@ -1,0 +1,60 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 1 1
+ halign right_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass InspectValuePanel {
+   ignorepointer 1
+   position 0.35 -0.45
+   size 0.3 0.03
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   {
+    TextWidgetClass ItemValueTitle {
+     position 0 0
+     size 0.49 1
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     priority 1
+     style Normal
+     text "#trader_filter_price"
+     font "gui/fonts/sdf_MetronLight24"
+     "text color" 1 1 1 1
+     "exact text" 1
+     "exact text size" 24
+     "text halign" right
+     "text valign" center
+    }
+    TextWidgetClass ItemValue {
+     position 0.5 0
+     size 0.48 1
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     priority 1
+     style Normal
+     text "#STR_rootFrame_WindowWidget_BackPanelWidget_InventoryInfoPanelWidget_ItemWeightWidgetBackground_ItemWeightWidget0"
+     font "gui/fonts/sdf_MetronLight24"
+     "text color" 1 1 1 1
+     "exact text" 1
+     "exact text size" 24
+     "text halign" center
+     "text valign" center
+    }
+   }
+  }
+ }
+}

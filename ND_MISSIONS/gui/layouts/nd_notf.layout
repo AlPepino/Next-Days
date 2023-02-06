@@ -1,0 +1,21 @@
+FrameWidgetClass rootFrame {
+ size 0 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 1
+ vexactsize 0
+ {
+  WrapSpacerWidgetClass ServerMessagesWindow {
+   visible 1
+   ignorepointer 0
+   position 0 0
+   size 550 0
+   hexactpos 0
+   vexactpos 0
+   hexactsize 1
+   vexactsize 0
+   "Size To Content V" 1
+   content_valign bottom
+  }
+ }
+}

@@ -1,0 +1,604 @@
+FrameWidgetClass MedicalRecordsFrame {
+ ignorepointer 1
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass MedicalRecordsWindow {
+   visible 1
+   ignorepointer 1
+   color 0 0 0 0.3922
+   position 0 0
+   size 0.9 0.9
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   style DayZDefaultPanel
+   {
+    PanelWidgetClass MedicalRecordsBackgroundWindow {
+     visible 1
+     ignorepointer 1
+     color 0 0 0 0.6235
+     position 0 0
+     size 0.98 0.95
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     style blank
+     {
+      PanelWidgetClass TopMenuWindow {
+       ignorepointer 1
+       color 0 0 0 0.6235
+       position 0 0.03
+       size 1 0.04
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style DayZDefaultPanel
+       {
+        PanelWidgetClass MenuPanel {
+         ignorepointer 1
+         position 0 0
+         size 0.95 0.98
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ButtonWidgetClass Menu1 {
+           visible 0
+           color 0.502 0 0 1
+           position 0 0
+           size 0.2 1
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           userID 11
+           style DayZDefaultButton
+           text "#npc_gossipmenu"
+           font "gui/fonts/amorserifpro-bold22"
+          }
+          ButtonWidgetClass Menu2 {
+           visible 0
+           disabled 0
+           color 0.502 0 0 1
+           position 0.2 0
+           size 0.2 1
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           userID 12
+           style DayZDefaultButton
+           text "#me_dna_cloning"
+           font "gui/fonts/amorserifpro-bold22"
+          }
+          ButtonWidgetClass Menu3 {
+           visible 0
+           color 0.502 0 0 1
+           position 0.2 0
+           size 0.2 1
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           userID 13
+           style DayZDefaultButton
+           text "#ip_teamup"
+           font "gui/fonts/amorserifpro-bold22"
+          }
+          ButtonWidgetClass Menu4 {
+           visible 0
+           color 0.502 0 0 1
+           position 0.4 0
+           size 0.2 1
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           userID 14
+           style DayZDefaultButton
+           text "#ip_halloffame"
+           font "gui/fonts/amorserifpro-bold22"
+          }
+          ButtonWidgetClass Menu5 {
+           visible 0
+           color 0.4941 0.4941 0.4941 1
+           position 0.8 0
+           size 0.2 1
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           userID 14
+           style DayZDefaultButton
+           text "Menu4"
+           font "gui/fonts/amorserifpro-bold22"
+          }
+          PanelWidgetClass BalancePanel {
+           ignorepointer 1
+           size 250 32
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           {
+            TextWidgetClass BalanceText {
+             ignorepointer 1
+             size 216 30
+             halign right_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 0
+             hexactsize 1
+             vexactsize 1
+             text "0"
+             font "gui/fonts/amorserifpro22"
+             "text valign" center
+            }
+            ImageWidgetClass BalanceIcon {
+             ignorepointer 1
+             color 0.6588 0.6588 0.6588 1
+             size 32 32
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 1
+             vexactsize 1
+             image0 "set:dayz_gui image:notification_friend"
+             mode blend
+             "src alpha" 1
+             stretch 1
+            }
+           }
+          }
+         }
+        }
+        ButtonWidgetClass CloseBtn {
+         position 0 0
+         size 0.04 1
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         userID 1
+         {
+          ImageWidgetClass CloseIcon {
+           ignorepointer 1
+           position 0 0
+           size 32 32
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 1
+           vexactsize 1
+           image0 "set:dayz_gui image:icon_x"
+           mode blend
+           "src alpha" 1
+           "no wrap" 1
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass BodyWindow {
+       ignorepointer 1
+       position 0 0.1
+       size 1 0.89
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        PanelWidgetClass BodyWindowGossip {
+         visible 1
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         hexactpos 1
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style blank
+         {
+          PanelWidgetClass LefDNAWindow {
+           ignorepointer 1
+           position 0 0
+           size 1 1
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           {
+            WrapSpacerWidgetClass BodyLeftWindow2 {
+             ignorepointer 1
+             position 0 0.05
+             size 1000 0.95
+             hexactpos 0
+             vexactpos 0
+             hexactsize 1
+             vexactsize 0
+             Padding 10
+             Margin 0
+             {
+              WrapSpacerWidgetClass BL_groupAbility {
+               visible 1
+               ignorepointer 1
+               position 0 0
+               size 1 30
+               hexactpos 1
+               vexactpos 1
+               hexactsize 0
+               vexactsize 1
+               style Colorable
+               Padding 0
+               Margin 0
+               "Size To Content V" 1
+               {
+                PanelWidgetClass BL_titleBG0 {
+                 ignorepointer 1
+                 color 0 0 0 0.8627
+                 position 0 0
+                 size 250 30
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 style DayZDefaultPanel
+                 {
+                  TextWidgetClass BL_title0 {
+                   ignorepointer 1
+                   position 2 0
+                   size 250 26
+                   valign center_ref
+                   hexactpos 1
+                   vexactpos 1
+                   hexactsize 1
+                   vexactsize 1
+                   text "#npc_spreadrumours"
+                   "text valign" center
+                  }
+                 }
+                }
+                PanelWidgetClass BL_titleBG3 {
+                 ignorepointer 1
+                 color 0 0 0 0.702
+                 position 0 0
+                 size 1000 100
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 style DayZDefaultPanel
+                 {
+                  PanelWidgetClass PanelWidget0 {
+                   ignorepointer 1
+                   position 0 0
+                   size 500 1
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 1
+                   vexactsize 0
+                   {
+                    PanelWidgetClass PanelWidget2 {
+                     ignorepointer 1
+                     size 0.8 30
+                     valign bottom_ref
+                     hexactpos 1
+                     vexactpos 1
+                     hexactsize 0
+                     vexactsize 1
+                     {
+                      TextWidgetClass GossipPositiveCost {
+                       ignorepointer 1
+                       position 0 0
+                       size 1 26
+                       halign center_ref
+                       valign center_ref
+                       hexactpos 1
+                       vexactpos 1
+                       hexactsize 0
+                       vexactsize 1
+                       "text halign" center
+                       "text valign" center
+                      }
+                     }
+                    }
+                    PanelWidgetClass PanelWidget4 {
+                     ignorepointer 1
+                     size 0.8 30
+                     hexactpos 1
+                     vexactpos 1
+                     hexactsize 0
+                     vexactsize 1
+                     {
+                      TextWidgetClass TextWidgetRecovery0 {
+                       ignorepointer 1
+                       position 0 0
+                       size 1 26
+                       halign center_ref
+                       valign center_ref
+                       hexactpos 1
+                       vexactpos 1
+                       hexactsize 0
+                       vexactsize 1
+                       text "#npc_gossippositive"
+                       "text halign" center
+                       "text valign" center
+                      }
+                     }
+                    }
+                    ButtonWidgetClass ButtonWidgetPositive {
+                     disabled 1
+                     color 0.8353 0.2235 0.2235 1
+                     position 12 0
+                     size 64 64
+                     halign right_ref
+                     valign center_ref
+                     hexactpos 1
+                     vexactpos 1
+                     hexactsize 1
+                     vexactsize 1
+                     {
+                      ImageWidgetClass PositiveIcon {
+                       ignorepointer 1
+                       position 0 0
+                       size 1 1
+                       halign center_ref
+                       valign center_ref
+                       hexactpos 1
+                       vexactpos 1
+                       hexactsize 0
+                       vexactsize 0
+                       image0 "set:dayz_gui image:Expand"
+                       mode blend
+                       "src alpha" 1
+                       stretch 1
+                      }
+                     }
+                    }
+                    PanelWidgetClass PanelWidget6 {
+                     ignorepointer 1
+                     size 0.8 30
+                     valign center_ref
+                     hexactpos 1
+                     vexactpos 1
+                     hexactsize 0
+                     vexactsize 1
+                     {
+                      TextWidgetClass GossipPositive {
+                       ignorepointer 1
+                       position 0 0
+                       size 1 26
+                       halign center_ref
+                       valign center_ref
+                       hexactpos 1
+                       vexactpos 1
+                       hexactsize 0
+                       vexactsize 1
+                       "text halign" center
+                       "text valign" center
+                      }
+                     }
+                    }
+                   }
+                  }
+                  PanelWidgetClass PanelWidget1 {
+                   ignorepointer 1
+                   size 500 1
+                   halign right_ref
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 1
+                   vexactsize 0
+                   {
+                    PanelWidgetClass PanelWidget3 {
+                     ignorepointer 1
+                     size 0.8 30
+                     valign bottom_ref
+                     hexactpos 1
+                     vexactpos 1
+                     hexactsize 0
+                     vexactsize 1
+                     {
+                      TextWidgetClass GossipNegativeCost {
+                       ignorepointer 1
+                       position 0 0
+                       size 1 26
+                       halign center_ref
+                       valign center_ref
+                       hexactpos 1
+                       vexactpos 1
+                       hexactsize 0
+                       vexactsize 1
+                       "text halign" center
+                       "text valign" center
+                      }
+                     }
+                    }
+                    PanelWidgetClass PanelWidget5 {
+                     ignorepointer 1
+                     size 0.8 30
+                     hexactpos 1
+                     vexactpos 1
+                     hexactsize 0
+                     vexactsize 1
+                     {
+                      TextWidgetClass TextWidgetSave0 {
+                       ignorepointer 1
+                       position 0 0
+                       size 1 26
+                       halign center_ref
+                       valign center_ref
+                       hexactpos 1
+                       vexactpos 1
+                       hexactsize 0
+                       vexactsize 1
+                       text "#npc_gossipnegative"
+                       "text halign" center
+                       "text valign" center
+                      }
+                     }
+                    }
+                    ButtonWidgetClass ButtonWidgetNegative {
+                     disabled 1
+                     color 0.8353 0.2235 0.2235 1
+                     position 12 0
+                     size 64 64
+                     halign right_ref
+                     valign center_ref
+                     hexactpos 1
+                     vexactpos 1
+                     hexactsize 1
+                     vexactsize 1
+                     {
+                      ImageWidgetClass NegativeIcon {
+                       ignorepointer 1
+                       position 0 0
+                       size 1 1
+                       halign center_ref
+                       valign center_ref
+                       hexactpos 1
+                       vexactpos 1
+                       hexactsize 0
+                       vexactsize 0
+                       image0 "set:dayz_gui image:Collapse"
+                       mode blend
+                       "src alpha" 1
+                       stretch 1
+                      }
+                     }
+                    }
+                    PanelWidgetClass PanelWidget7 {
+                     ignorepointer 1
+                     size 0.8 30
+                     valign center_ref
+                     hexactpos 1
+                     vexactpos 1
+                     hexactsize 0
+                     vexactsize 1
+                     {
+                      TextWidgetClass GossipNegative {
+                       ignorepointer 1
+                       position 0 0
+                       size 1 26
+                       halign center_ref
+                       valign center_ref
+                       hexactpos 1
+                       vexactpos 1
+                       hexactsize 0
+                       vexactsize 1
+                       "text halign" center
+                       "text valign" center
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+                WrapSpacerWidgetClass Bl_groupStatsContainer {
+                 ignorepointer 1
+                 color 0 0 0 0.702
+                 position 0 30
+                 size 1 36
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 0
+                 vexactsize 1
+                 style DayZDefaultPanel
+                 Padding 0
+                 Margin 0
+                 "Size To Content V" 1
+                }
+               }
+              }
+              PanelWidgetClass BL_groupReputation {
+               visible 0
+               ignorepointer 1
+               position 0 0
+               size 1 116
+               hexactpos 1
+               vexactpos 1
+               hexactsize 0
+               vexactsize 1
+               style blank
+               {
+                PanelWidgetClass BL_titleBG2 {
+                 ignorepointer 1
+                 color 0 0 0 0.8627
+                 position 0 0
+                 size 250 30
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 style DayZDefaultPanel
+                 {
+                  TextWidgetClass BL_title2 {
+                   ignorepointer 1
+                   position 2 0
+                   size 250 26
+                   valign center_ref
+                   hexactpos 1
+                   vexactpos 1
+                   hexactsize 1
+                   vexactsize 1
+                   text "#ip_reputation"
+                   "text valign" center
+                  }
+                 }
+                }
+                WrapSpacerWidgetClass Bl_groupReputationContainer {
+                 ignorepointer 1
+                 color 0 0 0 0.702
+                 position 0 30
+                 size 1 86
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 0
+                 vexactsize 1
+                 style DayZDefaultPanel
+                 Padding 0
+                 Margin 0
+                 "Size To Content V" 1
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

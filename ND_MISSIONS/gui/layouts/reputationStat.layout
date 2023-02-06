@@ -1,0 +1,78 @@
+FrameWidgetClass rootFrame {
+ ignorepointer 1
+ position 0.008 0
+ size 1 50
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 1
+ {
+  TextWidgetClass BL_recordsBG {
+   visible 1
+   ignorepointer 1
+   size 1 50
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    TextWidgetClass TitleC1 {
+     ignorepointer 1
+     position 0 0
+     size 0.5 25
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 1
+     text "#ip_reputation_score"
+     font "gui/fonts/amorserifpro16"
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass TitleC2 {
+     ignorepointer 1
+     position 0 0
+     size 0.5 25
+     halign right_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 1
+     text "#ip_reputation_scoremax"
+     font "gui/fonts/amorserifpro16"
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass ValueC1 {
+     ignorepointer 1
+     position 0 0
+     size 0.5 25
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 1
+     text "0"
+     font "gui/fonts/amorserifpro16"
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass ValueC0 {
+     ignorepointer 1
+     position 0 0
+     size 0.5 25
+     halign right_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 1
+     text "0"
+     font "gui/fonts/amorserifpro16"
+     "text halign" center
+     "text valign" center
+    }
+   }
+  }
+ }
+}

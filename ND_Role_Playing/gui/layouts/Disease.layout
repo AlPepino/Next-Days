@@ -1,0 +1,185 @@
+FrameWidgetClass rootFrame {
+ ignorepointer 1
+ position 0 0
+ size 1 36
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 1
+ {
+  PanelWidgetClass Disease_panel {
+   ignorepointer 0
+   color 0 0 0 0.4235
+   position 0 0
+   size 1 36
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   style blank
+   {
+    PanelWidgetClass STAT_iconBG {
+     ignorepointer 1
+     position 0 0
+     size 0.08 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      ImageWidgetClass Disease_icon {
+       ignorepointer 1
+       position 0 0
+       size 32 32
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:dayz_gui image:iconHealth0"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+    PanelWidgetClass Disease_text_BG {
+     ignorepointer 1
+     position 0.1 0
+     size 0.4 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      TextWidgetClass Disease_text {
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass Disease_button_BG {
+     ignorepointer 1
+     position 0.9 0
+     size 0.1 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      ButtonWidgetClass ButtonPlus {
+       color 0.8353 0.2235 0.2235 1
+       size 32 32
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        ImageWidgetClass PlusIcon {
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         image0 "set:dayz_gui image:iconPill"
+         mode blend
+         "src alpha" 1
+         stretch 1
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass Disease_exam_BG {
+     ignorepointer 1
+     position 0.5 0
+     size 0.2 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      TextWidgetClass Examination_text {
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass Disease_exam_BG0 {
+     ignorepointer 1
+     position 0.7 0
+     size 0.2 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      TextWidgetClass Price_text {
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "text halign" right
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass HeadTitlePanel {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 0.5 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     priority 1
+     {
+      TextWidgetClass HeadTitleText {
+       visible 0
+       ignorepointer 1
+       position 0.01 0
+       size 0.98 1
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "Nemoc"
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+ }
+}
